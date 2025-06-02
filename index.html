@@ -1,12 +1,18 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>Breakout Game</title>
+  <!-- Add a Google Font for a gamified look -->
+  <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style/main.css">
+  <script type="module" src="script/main.js"></script>
 </head>
 <body>
+  <div class="hud">
+    <span id="level-label">Level: 1</span>
+    <span id="score-label">Score: 0</span>
+  </div>
   <canvas id="gameCanvas" width="800" height="600"></canvas>
-  <script type="module" src="script/main.js"></script>
+  
 </body>
+
 </html>

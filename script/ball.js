@@ -27,6 +27,7 @@ export class Ball {
     ) {
       this.speed.y *= -1;
       this.position.y = paddle.position.y - this.radius;
+      this.game.score += 1;
     }
 
     // Bottom out
@@ -44,6 +45,7 @@ export class Ball {
       ) {
         this.speed.y *= -1;
         bricks.splice(i, 1);
+        this.game.score += 10;
         break;
       }
     }
