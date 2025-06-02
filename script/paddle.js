@@ -1,35 +1,29 @@
 export class Paddle {
   constructor(game) {
+    this.game = game;
     this.width = 120;
     this.height = 20;
     this.position = {
       x: (game.canvas.width - this.width) / 2,
       y: game.canvas.height - this.height - 10
     };
-    this.speed = 7;
     this.maxWidth = game.canvas.width;
-    this.left = false;
-    this.right = false;
     this.initInput();
   }
 
   initInput() {
-    document.addEventListener('keydown', e => {
-      if (e.key === 'ArrowLeft') this.left = true;
-      if (e.key === 'ArrowRight') this.right = true;
-    });
+    this.game.canvas.addEventListener('mousemove', e => {
+      const rect = this.game.canvas.getBoundingClientRect();
+      const mouseX = e.clientX - rect.left;
+      this.position.x = mouseX - this.width / 2;
 
-    document.addEventListener('keyup', e => {
-      if (e.key === 'ArrowLeft') this.left = false;
-      if (e.key === 'ArrowRight') this.right = false;
+      // Clamp within canvas
+      this.position.x = Math.max(0, Math.min(this.position.x, this.maxWidth - this.width));
     });
   }
 
   update() {
-    if (this.left) this.position.x -= this.speed;
-    if (this.right) this.position.x += this.speed;
-
-    this.position.x = Math.max(0, Math.min(this.position.x, this.maxWidth - this.width));
+    // Movement is handled by mouse, no update needed
   }
 
   draw(ctx) {

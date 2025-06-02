@@ -31,7 +31,8 @@ export class Ball {
 
     // Bottom out
     if (this.position.y > this.game.canvas.height) {
-      this.reset();
+      this.game.running = false;
+      this.game.showGameOver = true;
     }
 
     // Brick collision
