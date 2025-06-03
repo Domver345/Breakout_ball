@@ -66,4 +66,8 @@ Add sound effects, particle systems, or power-ups
 🏆 High score saving (using localStorage)
 
 🙌 Acknowledgments
+<<<<<<< HEAD
 Inspired by the classic Atari Breakout game. Font used: Press Start 2P by Codeman38.
+=======
+Inspired by the classic Atari Breakout game. Font used: Press Start 2P by Codeman38.
+>>>>>>> 0f539a333bf2c5fbdf00e83e9acfc96bf1ad529d
