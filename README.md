@@ -32,8 +32,11 @@ Breakout_ball/
 ### 1. Clone or Download the Repository
 
 git clone https://github.com/your-username/Breakout_ball.git 
+
 cd Breakout_ball 
-2. Open in Browser 
+
+2. Open in Browser
+
 Just open index.html in your browser. No build tools or server required! 
 
 
