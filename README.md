@@ -18,56 +18,56 @@ A modern, multi-level **Breakout-style ball game** built using **HTML, CSS, and 
 
 ## 📁 File Structure
 
-Breakout_ball/
-├── index.html # Main HTML structure
-├── styles.css # Custom styles, fonts, animations
-├── main.js # Game logic (ball, paddle, bricks, scoring)
-├── assets/
-│ └── press-start-2p.woff # Retro game font (Google Fonts)
-└── README.md # Project documentation
+Breakout_ball/ 
+├── index.html # Main HTML structure 
+├── styles.css # Custom styles, fonts, animations 
+├── main.js # Game logic (ball, paddle, bricks, scoring) 
+├── assets/  
+│ └── press-start-2p.woff # Retro game font (Google Fonts) 
+└── README.md # Project documentation 
 
 
 ## 🚀 Getting Started
 
 ### 1. Clone or Download the Repository
 
-git clone https://github.com/your-username/Breakout_ball.git
-cd Breakout_ball
-2. Open in Browser
-Just open index.html in your browser. No build tools or server required!
+git clone https://github.com/your-username/Breakout_ball.git 
+cd Breakout_ball 
+2. Open in Browser 
+Just open index.html in your browser. No build tools or server required! 
 
 
 
-📚 Technologies Used
-HTML5 Canvas for game rendering
+📚 Technologies Used 
+HTML5 Canvas for game rendering 
 
-JavaScript (ES6) for game logic
+JavaScript (ES6) for game logic 
 
-CSS3 for layout and animations
-
-Google Fonts – Press Start 2P
+CSS3 for layout and animations 
+ 
+Google Fonts – Press Start 2P 
 
 ✨ Customization
-You can easily:
+You can easily: 
 
-Change game colors in styles.css
+Change game colors in styles.css 
 
-Adjust level mechanics in main.js
+Adjust level mechanics in main.js 
 
-Add sound effects, particle systems, or power-ups
+Add sound effects, particle systems, or power-ups 
 
-🧠 Ideas for Future Improvements
-🔊 Add music/sound effects
+🧠 Ideas for Future Improvements 
+🔊 Add music/sound effects 
 
-🧲 Paddle power-ups (size increase, sticky ball, etc.)
+🧲 Paddle power-ups (size increase, sticky ball, etc.) 
 
-🎨 Themes and difficulty modes
+🎨 Themes and difficulty modes 
 
-🏆 High score saving (using localStorage)
+🏆 High score saving (using localStorage) 
 
-🙌 Acknowledgments
-<<<<<<< HEAD
-Inspired by the classic Atari Breakout game. Font used: Press Start 2P by Codeman38.
-=======
-Inspired by the classic Atari Breakout game. Font used: Press Start 2P by Codeman38.
->>>>>>> 0f539a333bf2c5fbdf00e83e9acfc96bf1ad529d
+🙌 Acknowledgments 
+<<<<<<< HEAD 
+Inspired by the classic Atari Breakout game. Font used: Press Start 2P by Codeman38. 
+======= 
+Inspired by the classic Atari Breakout game. Font used: Press Start 2P by Codeman38. 
+>>>>>>> 0f539a333bf2c5fbdf00e83e9acfc96bf1ad529d 
