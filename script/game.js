@@ -21,8 +21,6 @@ export class Game {
     this.paddle = new Paddle(this);
     this.ball = new Ball(this);
     this.bricks = createBricks(this, levels[this.level]);
-    // this.levelIndex = 0;
-    // this.score = 0;
     this.running = true;
   }
 

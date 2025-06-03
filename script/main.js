@@ -1,5 +1,10 @@
 import { Game } from './game.js';
 
+// Background Music
+const bgMusic = new Audio('assets/sounds/bg-music.mp3');
+bgMusic.loop = true;
+bgMusic.volume = 0.4;
+
 const canvas = document.getElementById('gameCanvas');
 const ctx = canvas.getContext('2d');
 const game = new Game(canvas, ctx);
@@ -9,6 +14,10 @@ canvas.addEventListener("click", () => {
   if (!game.running && game.showGameOver) {
     game.reset();
     game.start();
+    
+  }
+  if (bgMusic.paused) {
+    bgMusic.play();
   }
 });
 
@@ -24,6 +33,7 @@ function draw() {
     ctx.font = "20px 'Press Start 2P'";
     ctx.textAlign = "center";
     ctx.fillText("Game Over - Click to Restart", canvas.width / 2, canvas.height / 2);
+    
   }
 
   // ✅ Update HUD labels
@@ -34,3 +44,13 @@ function draw() {
 }
 
 draw();
+
+let isMuted = false;
+
+document.getElementById('muteBtn').addEventListener('click', () => {
+  isMuted = !isMuted;
+  bgMusic.muted = isMuted;
+  document.getElementById('muteBtn').textContent = isMuted ? '🔊' : '🔇';
+});
+
+// bgMusic.play();
